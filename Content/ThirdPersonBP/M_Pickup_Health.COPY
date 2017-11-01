@@ -1,0 +1,151 @@
+Begin Object Class=/Script/Engine.Material Name="M_Pickup_Health"
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFresnel Name="MaterialExpressionFresnel_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFresnel Name="MaterialExpressionFresnel_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_309"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_308"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_307"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_306"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_305"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_0"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_1"
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0"
+      DefaultValue=(R=0.029176,G=0.698695,B=1.000000,A=0.000000)
+      ParameterName="Color"
+      ExpressionGUID=EEFECF5D463FFAA695C80185C9B78947
+      MaterialExpressionEditorX=-800
+      MaterialExpressionEditorY=-500
+      MaterialExpressionGuid=C577E9F643D2296A6F35829553B9F957
+      Material=Material'M_Pickup_Health'
+   End Object
+   Begin Object Name="MaterialExpressionFresnel_2"
+      Exponent=3.000000
+      BaseReflectFraction=0.000000
+      MaterialExpressionEditorX=-780
+      MaterialExpressionEditorY=-680
+      MaterialExpressionGuid=09A55245484EF59F36D73587A9B4474D
+      Material=Material'M_Pickup_Health'
+   End Object
+   Begin Object Name="MaterialExpressionFresnel_0"
+      Exponent=3.000000
+      BaseReflectFraction=0.500000
+      MaterialExpressionEditorX=-820
+      MaterialExpressionEditorY=520
+      MaterialExpressionGuid=3AB464314D1C5BB50E5A53A94F45676B
+      Material=Material'M_Pickup_Health'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_4"
+      R=1.000000
+      MaterialExpressionEditorX=-777
+      MaterialExpressionEditorY=-157
+      MaterialExpressionGuid=2A41CA0F4B53E2E9799540BC2B160B07
+      Material=Material'M_Pickup_Health'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_3"
+      R=0.900000
+      MaterialExpressionEditorX=-840
+      MaterialExpressionEditorY=900
+      MaterialExpressionGuid=E75E89E549E1F65305DAAE8FCE8E6168
+      Material=Material'M_Pickup_Health'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1"
+      MaterialExpressionEditorX=-780
+      MaterialExpressionEditorY=180
+      MaterialExpressionGuid=98DAF70944DD22D6E1DEBAA06AAA10E2
+      Material=Material'M_Pickup_Health'
+   End Object
+   Begin Object Name="MaterialExpressionComment_309"
+      SizeX=302
+      SizeY=295
+      Text="Refraction"
+      MaterialExpressionEditorX=-902
+      MaterialExpressionEditorY=837
+      MaterialExpressionGuid=EF05A1F44E1E58A637436CB2230835E6
+      Material=Material'M_Pickup_Health'
+   End Object
+   Begin Object Name="MaterialExpressionComment_308"
+      SizeX=361
+      SizeY=260
+      Text="Opacity"
+      MaterialExpressionEditorX=-882
+      MaterialExpressionEditorY=457
+      MaterialExpressionGuid=E549F0B641107A9026E698B7CB8C6E2E
+      Material=Material'M_Pickup_Health'
+   End Object
+   Begin Object Name="MaterialExpressionComment_307"
+      SizeX=302
+      SizeY=295
+      Text="Roughness"
+      MaterialExpressionEditorX=-842
+      MaterialExpressionEditorY=117
+      MaterialExpressionGuid=89FE13C64A85E267DB4907A95342A763
+      Material=Material'M_Pickup_Health'
+   End Object
+   Begin Object Name="MaterialExpressionComment_306"
+      SizeX=302
+      SizeY=295
+      Text="Specular"
+      MaterialExpressionEditorX=-840
+      MaterialExpressionEditorY=-220
+      MaterialExpressionGuid=136B49B04BD0BFCDAEFF5183C9709D1F
+      Material=Material'M_Pickup_Health'
+   End Object
+   Begin Object Name="MaterialExpressionComment_305"
+      SizeX=580
+      SizeY=518
+      Text="BaseColor"
+      MaterialExpressionEditorX=-862
+      MaterialExpressionEditorY=-742
+      MaterialExpressionGuid=EA5FDB224FE0204E29D3C5A8D4025738
+      Material=Material'M_Pickup_Health'
+   End Object
+   Begin Object Name="MaterialExpressionAdd_0"
+      A=(Expression=MaterialExpressionFresnel'M_Pickup_Health:MaterialExpressionFresnel_2')
+      B=(Expression=MaterialExpressionVectorParameter'M_Pickup_Health:MaterialExpressionVectorParameter_0',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-442
+      MaterialExpressionEditorY=-587
+      MaterialExpressionGuid=2A084E5D4AB49CDD90B16283AC17F4AA
+      Material=Material'M_Pickup_Health'
+   End Object
+   BaseColor=(Expression=MaterialExpressionAdd'MaterialExpressionAdd_0')
+   Metallic=(OutputIndex=-1)
+   Specular=(Expression=MaterialExpressionConstant'MaterialExpressionConstant_4')
+   Roughness=(Expression=MaterialExpressionConstant'MaterialExpressionConstant_1')
+   Opacity=(Expression=MaterialExpressionFresnel'MaterialExpressionFresnel_0')
+   BlendMode=BLEND_Translucent
+   Refraction=(Expression=MaterialExpressionConstant'MaterialExpressionConstant_3')
+   bUsesDistortion=True
+   Expressions(0)=MaterialExpressionAdd'MaterialExpressionAdd_0'
+   Expressions(1)=MaterialExpressionConstant'MaterialExpressionConstant_4'
+   Expressions(2)=MaterialExpressionConstant'MaterialExpressionConstant_1'
+   Expressions(3)=MaterialExpressionFresnel'MaterialExpressionFresnel_0'
+   Expressions(4)=MaterialExpressionConstant'MaterialExpressionConstant_3'
+   Expressions(5)=MaterialExpressionVectorParameter'MaterialExpressionVectorParameter_0'
+   Expressions(6)=MaterialExpressionFresnel'MaterialExpressionFresnel_2'
+   EditorComments(0)=MaterialExpressionComment'MaterialExpressionComment_305'
+   EditorComments(1)=MaterialExpressionComment'MaterialExpressionComment_306'
+   EditorComments(2)=MaterialExpressionComment'MaterialExpressionComment_307'
+   EditorComments(3)=MaterialExpressionComment'MaterialExpressionComment_308'
+   EditorComments(4)=MaterialExpressionComment'MaterialExpressionComment_309'
+   StateId=F2BC1D304D9B7ED681787280DDC6EF42
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_1'
+   LightingGuid=070959A846718452CD38D3BDA2A31E15
+End Object
